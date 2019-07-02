@@ -1,3 +1,43 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+home:
+    path: /
+    controller: App\Controller\FrontController::homePage
+
+productList:
+    path: /nos-produits
+    controller: App\Controller\FrontController::productListPage
+
+productDetail:
+    path: /produit
+    controller: App\Controller\FrontController::productDetailPage
+
+basket:
+    path: /votre-panier
+    controller: App\Controller\FrontController::basketPage
+
+contact:
+    path: /nous-contacter
+    controller: App\Controller\FrontController::contactPage
+
+signIn:
+    path: /connexion
+    controller: App\Controller\FrontController::subscribingSigninPage
+
+delivery:
+    path: /livraison
+    controller: App\Controller\FrontController::deliveryPage
+
+payment:
+    path: /paiement
+    controller: App\Controller\FrontController::paymentPage
+
+aboutUs:
+    path: /a-propos-de-nous
+    controller: App\Controller\FrontController::cmsPage
+
+error500:
+    path: /error/500
+    controller: App\Controller\FrontController::error500page
+
+error404:
+  path: /error/404
+  controller: App\Controller\FrontController::error404page
