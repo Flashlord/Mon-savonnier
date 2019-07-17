@@ -11,6 +11,7 @@ var Master = {
 
         this.init_body_nav();
         this.scroll_slides();
+        this.init_footer();
 
         this.init_block_products();
         this.init_block_catslider();
@@ -115,6 +116,14 @@ var Master = {
         $('.cbo-header .header-burger').on('click', function(e){
             e.preventDefault();
             $('body').toggleClass('body--nav');
+        });
+    },
+
+    init_footer : function(){
+
+        $('.cbo-footer .footer-bottom .col-title').on('click', function(e){
+            e.preventDefault();
+            $(this).parent().toggleClass('active');
         });
     },
 

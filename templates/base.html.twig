@@ -73,10 +73,89 @@
         {% block body %}{% endblock %}
         </main>
 
+        {% if app.request.get('_route') != 'home' %}
+
         <!-- Footer -->
 
         <footer class="cbo-footer">
+            <div class="footer-top">
+                <div class="top-line"></div>
+                <div class="top-col">
+                    <i class="icon icon--bike"></i>
+                    <span>Livraison 100%<br />écologique et rapide</span>
+                </div>
+                <div class="top-col">
+                    <i class="icon icon--shield"></i>
+                    <span>Avec mon savonnier<br />payez en toute sécurité</span>
+                </div>
+                <div class="top-col">
+                    <i class="icon icon--eco"></i>
+                    <span>Des produits bio<br />et vegan</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="bottom-inner cbo-container">
+                    <div class="bottom-col">
+                        <a href="#" class="col-title">
+                            Notre gamme
+                            <i class="icon icon--less"></i>
+                            <i class="icon icon--more"></i>
+                        </a>
+                        <ul class="col-list">
+                            <li><a href="#">- Savons</a></li>
+                            <li><a href="#">- Shampooings solides</a></li>
+                            <li><a href="#">- Soins du corps</a></li>
+                            <li><a href="#">- Porte savons</a></li>
+                            <li><a href="#">- Vegan</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom-col">
+                        <a href="#" class="col-title">
+                            Mon savonnier
+                            <i class="icon icon--less"></i>
+                            <i class="icon icon--more"></i>
+                        </a>
+                        <ul class="col-list">
+                            <li><a href="#">- À propos</a></li>
+                            <li><a href="#">- CGV</a></li>
+                            <li><a href="#">- Mentions légales</a></li>
+                            <li><a href="#">- Politique de confidentialité</a></li>
+                            <li><a href="#">- Plan du site</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom-col">
+                        <a href="#" class="col-title">
+                            Votre compte
+                            <i class="icon icon--less"></i>
+                            <i class="icon icon--more"></i>
+                        </a>
+                        <ul class="col-list">
+                            <li><a href="#">- Mon compte</a></li>
+                            <li><a href="#">- Mes informations</a></li>
+                            <li><a href="#">- Mes commandes</a></li>
+                            <li><a href="#">- Mes adresses</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom-col">
+                        <a href="#" class="col-title">
+                            Besoin d'aide ?
+                        </a>
+                        <ul class="col-list">
+                            <li><a href="#">- Nous contacter :</a></li>
+                            <li>Par téléphone au <strong>06 37 12 74 30</strong></li>
+                            <li>Par mail : <strong>contact@mon-savonnier.fr</strong></li>
+                            <li>Par le biais du formulaire de contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <div class="copy-logo">
+                    <img src="{{ asset('/front/dist/images/logo.png') }}" alt="Mon Savonnier - Tous droits réservés" />
+                </div>
+            </div>
         </footer>
+        {% endif %}
 
         {% block javascripts %}
         <script type="text/javascript" src="{{ asset('/front/dist/js/scripts.js') }}"></script>

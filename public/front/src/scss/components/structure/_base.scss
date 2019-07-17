@@ -23,6 +23,12 @@ body{
 	min-height:calc(100vh - 240px);
 }
 
+.cbo-container{
+	width:90%;
+	max-width:1200px;
+	margin:0 auto;
+}
+
 body.home .cbo-main{
 
 	&:before,

@@ -6,6 +6,150 @@
 
 .cbo-footer{
 
+	.footer-top{
+		position:relative;
+		background:$colorgreen;
+		text-align:center;
+		padding:45px 0;
+
+		.top-col{
+			display:inline-block;
+			vertical-align:middle;
+			color:$colorwhite;
+			margin:0 20px;
+
+			.icon{
+				font-size:40px;
+			}
+
+			span{
+				display:none;
+			}
+		}
+
+		&:before,
+		&:after{
+			content:'';
+			display:block;
+			position::absolute;
+		}
+
+		&:before{
+			width:77px;
+			height:109px;
+			background:url(../images/footer/left-leaves-inner.png) no-repeat;
+			background-size:100% auto;
+			left:0; top:-44px;
+		}
+
+		&:after{
+			width:67px;
+			height:87px;
+			background:url(../images/footer/right-leaves-inner.png) no-repeat;
+			background-size:100% auto;
+			right:0; bottom:-41px;
+		}
+	}
+
+	.footer-bottom{
+		background:$colorgreylight;
+		padding:60px 0;
+
+		.bottom-col{
+			margin:0 0 10px 0;
+
+			.col-title{
+				display:block;
+				color: $colorgreen;
+				font-family: $fontsecond;
+				font-size: 24px;
+				padding:10px 0;
+				margin:0 0 10px 0;
+				text-decoration:none;
+				position:relative;
+
+				.icon{
+					position:absolute;
+					top:50%; right:0;
+					color:$colorblack;
+					font-size:12px;
+					margin-top:-6px;
+					transition:transform .3s $easeinout;
+				}
+
+				.icon--less{ transform:scale(0); }
+			}
+
+			.col-list{
+				display:none;
+				margin:0;
+				padding:0;
+
+				li{
+					margin:0 0 5px 0; 
+					padding:0;
+					list-style:none;
+					color:$colorblack;
+
+					a{
+						text-decoration:none;
+						color:$colorblack;
+					}
+
+					strong{
+						color:$colorgreen;
+					}
+				}
+			}
+
+			&.active{
+
+				.col-title{
+
+					.icon--less{ transform:scale(1); }
+					.icon--more{ transform:scale(0); }
+				}
+
+				.col-list{
+					display:block;
+				}
+			}
+
+			&:last-child{
+				margin-top:50px;
+
+				.col-list{
+					display:block;
+				}
+			}
+		}
+	}
+
+	.footer-copy{
+		position:relative;
+		background:$colorwhite;
+		height:50px;
+
+		.copy-logo{
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			width:73px;
+			height:73px;
+			border-radius:50%;
+			background:$colorwhite;
+			position:absolute;
+			bottom:0;
+			left:50%;
+			transform:translateX(-50%);
+
+			img{
+				display:block;
+				width:58px;
+				height:auto;
+			}
+		}
+	}
 }
 
 
@@ -29,6 +173,82 @@
 
 	.cbo-footer{
 		
+		.footer-top{
+
+			.top-line{
+				display:block;
+				width:100%;
+				height:1px;
+				background:$colorwhite;
+				position:absolute;
+				top:74px;
+			}
+
+			.top-col{
+				position:relative;
+				vertical-align:top;
+
+				.icon{
+					width:55px;
+					height:55px;
+					background:$colorgreen;
+				}
+
+				span{
+					display:block;
+					color:$colorwhite;
+					font-family:$fontsecond;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 1em;
+					width:160px;
+				}
+			}
+
+			&:before{
+				width:232px;
+				height:282px;
+				top:-78px;
+				z-index:5;
+			}
+
+			&:after{
+				width:194px;
+				height:221px;
+				bottom:-76px;
+				z-index:5;
+			}
+		}
+
+		.footer-bottom{
+
+			.bottom-inner{
+				display:flex;
+			}
+
+			.bottom-col{
+				width:25%;
+				margin:0;
+
+				.col-title{
+					display:inline-block;
+					margin-bottom:20px;
+
+					.icon{
+						display:none;
+					}
+				}
+
+				.col-list{
+					display:block;
+					font-size:14px;
+				}
+
+				&:last-child{
+					margin:0;
+				}
+			}
+		}
 	}
 }
 
@@ -41,6 +261,15 @@
 
 	.cbo-footer{
 
+		.footer-bottom{
+
+			.bottom-col{
+
+				.col-list{
+					font-size:16px;
+				}
+			}
+		}
 	}
 }
 
