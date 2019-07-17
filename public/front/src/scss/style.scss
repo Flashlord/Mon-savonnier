@@ -1,0 +1,41 @@
+/******************************************************************
+Author: Creative Bones
+******************************************************************/
+
+/*********************
+IMPORTING PARTIALS
+*********************/
+
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/fonts";
+@import "partials/icons";
+@import "partials/animations";
+@import "partials/owl.carousel";
+
+/*********************
+IMPORTING COMPONENTS
+*********************/
+
+@import "components/structure/base";
+@import "components/structure/header";
+@import "components/structure/footer";
+
+@import "components/micros/typography";
+@import "components/micros/buttons";
+@import "components/micros/forms";
+
+@import "components/blocks/catslider";
+
+/*********************
+PRINT STYLESHEET
+*********************/
+
+@media print {
+	@import "partials/print";
+
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+	@import "partials/ie";
+}

@@ -1,0 +1,294 @@
+/* -------------------------------
+   HEADER COMPONENT
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-header{
+	position:absolute;
+	top:0; left:0;
+	width:100%;
+
+	.header-mobile{
+		position:relative;
+
+		&:before{
+			content:'';
+			display:block;
+			width:261px;
+			height:181px;
+			background:url(../images/header/left-leaves-mobile.png);
+			position:absolute;
+			top:0; left:0;
+		}
+
+		.mobile-inner{
+			display:block;
+			width:261px;
+			height:133px;
+			position:absolute;
+			top:0; left:50%;
+			margin-left:-130.5px;
+			background:url(../images/header/buttons-background-mobile.png);
+		}
+
+		.mobile-logo{
+			display:block;
+			width:73px;
+			position:absolute;
+			top:53px; left:30px;
+
+			img{
+				display:block;
+				width:100%;
+				height:auto;
+			}
+		}
+
+		.mobile-burger{
+			position:absolute;
+			top:65px; right:52px;
+		}
+	}
+
+	.header-desktop{
+		display:none;
+	}
+
+	.header-burger{
+		display:block;
+		position:relative;
+		width:43px;
+		height:43px;
+		background:none;
+		border:none;
+		padding:0;
+		color:$colorblack;
+		cursor:pointer;
+
+		.icon{
+			display:block;
+			width:43px;
+			height:43px;
+			position:absolute;
+			top:0; left:50%;
+			margin-left:-21.5px;
+			font-size:43px;
+			line-height:43px;
+		}
+
+		.burger{
+			display:block;
+			width:43px;
+			height:43px;
+			position:absolute;
+			top:0; left:50%;
+			margin-left:-21.5px;
+
+			span,
+			&:before,
+			&:after{
+				display:block;
+				content:'';
+				width:20px;
+				height:2px;
+				background:$colorgold;
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin-left:-10px;
+			}
+
+			span{
+				margin-top:-1px;
+			}
+
+			&:before{
+				margin-top:-6px;
+			}
+
+			&:after{
+				margin-top:4px;
+			}
+		}
+	}
+}
+
+body.body--nav{
+
+	.cbo-header{
+
+	}
+}
+
+body.body--scroll{
+
+	.cbo-header{
+
+	}
+}
+
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-header{
+
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-header{
+
+		.header-mobile{
+			display:none;
+		}
+
+		.header-desktop{
+			display:block;
+			position:absolute;
+			top:0; left:0;
+			width:100%;
+
+			.desktop-logo{
+				display:block;
+				width:245px;
+				height:191px;
+				background:url(../images/header/logo-background.png) no-repeat;
+				position:absolute;
+				top:0; left:0;
+
+				a{
+					position:absolute;
+					top:65px;
+					left:55px;
+				}
+			}
+
+			.desktop-buttons{
+				display:block;
+				width:488px;
+				height:234px;
+				background:url(../images/header/buttons-background.png) no-repeat;
+				position:absolute;
+				top:0; right:0;
+
+				.icon{
+					display:block;
+					width:43px;
+					height:43px;
+					position:absolute;
+					top:0; left:50%;
+					margin-left:-21.5px;
+					font-size:43px;
+					line-height:43px;
+				}
+
+				.label{
+					display:block;
+					position:absolute;
+					text-align:center;
+					color:$colorblack;
+					font-size: 15px;
+					font-weight: 700;
+					width:100%;
+					left:0; top:52px;
+					white-space:nowrap;
+					overflow:hidden;
+					text-overflow:ellipsis;
+				}
+
+				button,
+				a{
+					display:block;
+					width:80px;
+					height:80px;
+					text-align:center;
+					text-decoration:none;
+					color:$colorblack;
+				}
+
+				.buttons-burger{
+					position:absolute;
+					top:55px; left:40px;
+				}
+
+				.buttons-account{
+					position:absolute;
+					top:55px; left:162px;
+
+					.icon{
+						width:56px;
+						height:56px;
+						margin-left:-28px;
+						font-size:56px;
+						line-height:56px;
+						top:-4px;
+					}
+				}
+
+				.buttons-cart{
+					position:absolute;
+					top:55px; left:292px;
+
+					.icon{
+						width:46px;
+						height:46px;
+						margin-left:-23px;
+						font-size:46px;
+						line-height:46px;
+						top:-2px;
+					}
+
+					.count{
+						display:block;
+						background:$colorred;
+						width:20px;
+						height:20px;
+						border-radius:50%;
+						position:absolute;
+						top:0; left:50%;
+						margin-left:16px;
+						line-height:20px;
+						font-size: 12px;
+						font-weight: 700;
+						color:$colorwhite;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-header{
+
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-header{
+
+	}
+}

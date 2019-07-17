@@ -1,0 +1,82 @@
+/* -------------------------------
+   BUTTONS COMPONENT
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-button{
+	display:inline-block;
+	height:50px;
+	line-height:50px;
+	border:1px solid $colorgreen;
+	color:$colorgreen;
+	font-size:14px;
+	padding:0 25px;
+	text-decoration:none;
+	background:none;
+	border-radius:25px;
+
+	.icon{
+		margin:0 0 0 70px;
+	}
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-button{
+
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-button{
+		transition:all .4s;
+
+		.icon{
+			transition:transform .4s $easeinout;
+		}
+
+		&:hover{
+			background:$colorgreen;
+			color:$colorwhite;
+
+			.icon{
+				transform:translateX(-20px);
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-button{
+
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-button{
+
+	}
+}

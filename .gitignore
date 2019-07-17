@@ -52,3 +52,5 @@
 ###< symfony/web-server-bundle ###
 
 .idea/
+
+/public/front/node_modules

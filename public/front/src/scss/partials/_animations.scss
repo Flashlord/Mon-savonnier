@@ -1,0 +1,52 @@
+/* -------------------------------
+   KEYFRAMES
+------------------------------- */
+
+
+
+/* -------------------------------
+   SCROLL SLIDES
+------------------------------- */
+
+.slide-up,
+.slide-down,
+.slide-left,
+.slide-right,
+.scale-up{
+	opacity: 0;
+	transition:opacity 1s linear .15s, transform 1s $easeinout2;
+}
+
+.slide-up{
+	transform: translateY(10%);
+}
+
+.slide-down{
+	transform: translateY(-10%);
+}
+
+.slide-left{
+	transform: translateX(50%);
+}
+
+.slide-right{
+	transform: translateX(-50%);
+}
+
+.scale-up{
+	transform: scale(0.8);
+	transition-timing-function:$easeinout;
+}
+
+.anim-slide-up,
+.anim-slide-down,
+.anim-slide-left,
+.anim-slide-right{
+	opacity:1;
+	transform: translate(0,0);
+}
+
+.anim-scale-up{
+	opacity:1;
+	transform: scale(1);
+}

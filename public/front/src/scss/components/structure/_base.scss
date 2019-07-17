@@ -1,0 +1,110 @@
+html,
+body{
+	height:100%;
+	font-family:$fontbase;
+	color:$colorblack;
+}
+
+body{
+	background:url(../images/background.jpg);
+	padding:240px 0 0 0;
+}
+
+* {
+
+	&:focus{
+		outline:none;
+	}
+}
+
+.cbo-main{
+	position:relative;
+	min-height:100%;
+	min-height:calc(100vh - 240px);
+}
+
+body.home .cbo-main{
+
+	&:before,
+	&:after{
+		content:'';
+		display:block;
+		position:absolute;
+		bottom:0;
+		background-repeat:no-repeat;
+		z-index:10;
+	}
+
+	&:before{
+		width:100px;
+		height:170px;
+		background-image:url(../images/footer/left-leaves-mobile.png);
+		background-position:bottom left;
+		left:0;
+	}
+
+	&:after{
+		width:100px;
+		height:170px;
+		background-image:url(../images/footer/right-leaves-mobile.png);
+		background-position:bottom right;
+		right:0;
+	}
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	body{
+		padding:200px 0 0 0;
+	}
+
+	.cbo-main{
+		min-height:calc(100vh - 200px);
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	body.home .cbo-main{
+
+		&:before{
+			width:300px;
+			height:400px;
+			background-image:url(../images/footer/left-leaves.png);
+		}
+
+		&:after{
+			width:236px;
+			height:350px;
+			background-image:url(../images/footer/right-leaves.png);
+		}
+	}
+}
+

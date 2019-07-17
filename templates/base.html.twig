@@ -3,10 +3,84 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('/front/dist/css/style.css') }}">
+        {% endblock %}
     </head>
-    <body>
+    <body class="home">
+
+        <!-- Header -->
+
+    	<header class="cbo-header">
+
+            <!-- Header mobile -->
+
+            <div class="header-mobile">
+                <div class="mobile-inner">
+                    <a href="/" class="mobile-logo">
+                        <img src="{{ asset('/front/dist/images/logo.png') }}" alt="Mon Savonnier" />
+                    </a>
+                    <button class="mobile-burger header-burger">
+                        <i class="icon icon--bg-menu"></i>
+                        <span class="burger">
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Header desktop -->
+
+            <div class="header-desktop">
+
+                <div class="desktop-logo">
+                    <a href="/" class="header-logo">
+                        <img src="{{ asset('/front/dist/images/logo.png') }}" alt="Mon Savonnier" />
+                    </a>
+                </div>
+
+                <div class="desktop-buttons">
+
+                    <button class="buttons-burger header-burger">
+                        <i class="icon icon--bg-menu"></i>
+                        <span class="burger">
+                            <span></span>
+                        </span>
+                        <span class="label">Menu</span>
+                    </button>
+
+                    <a href="#" class="buttons-account">
+                        <i class="icon icon--account"></i>
+                        <span class="label">Grégory</span>
+                    </a>
+
+                    <a href="#" class="buttons-cart">
+                        <i class="icon icon--cart-full"></i>
+                        <span class="count">1</span>
+                        <span class="label">Mon panier</span>
+                    </a>
+                
+                </div>
+
+            </div>
+
+    	</header>
+
+        <!-- Main -->
+
+        <main class="cbo-main">
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        </main>
+
+        <!-- Footer -->
+
+        <footer class="cbo-footer">
+        </footer>
+
+        {% block javascripts %}
+        <script type="text/javascript" src="{{ asset('/front/dist/js/scripts.js') }}"></script>
+        {% endblock %}
+
     </body>
 </html>

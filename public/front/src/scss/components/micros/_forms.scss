@@ -1,0 +1,100 @@
+/* -------------------------------
+   FORMS & FIELDS
+   --
+   Mobile First !
+------------------------------- */
+
+label.error{ display:none !important; }
+
+/* Inputs */
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=password],
+select,
+textarea{
+
+
+	&::placeholder{
+
+  }
+
+  &.error{
+
+  }
+}
+
+/* Select */
+
+select{
+  -webkit-appearance: none;
+}
+
+/* Textarea */
+
+textarea{
+	outline:none;
+	resize:none;
+
+	&::placeholder{
+
+	}
+
+  &.error{
+
+  }
+}
+
+/* Checkbox, Radio */
+
+input[type=checkbox],
+input[type=radio]{
+  opacity:0;
+  width:0;
+  height:0;
+  position:absolute;
+
+  & + label{
+  }
+
+  &:checked + label{
+  }
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+	
+}

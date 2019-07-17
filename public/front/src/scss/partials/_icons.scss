@@ -1,0 +1,30 @@
+// Custom template
+
+@font-face {
+    font-family:"icons";
+    src: url("../fonts/icons.eot?b330832c93663e26c6587dab9b1d6f1f");
+    src: url("../fonts/icons.eot?b330832c93663e26c6587dab9b1d6f1f#iefix") format("embedded-opentype"),
+		url("../fonts/icons.woff?b330832c93663e26c6587dab9b1d6f1f") format("woff"),
+		url("../fonts/icons.ttf?b330832c93663e26c6587dab9b1d6f1f") format("truetype"),
+		url("../fonts/icons.svg?b330832c93663e26c6587dab9b1d6f1f#icons") format("svg");
+    font-weight:normal;
+    font-style:normal;
+    }
+
+.icon {
+    font-family:"icons";
+    display:inline-block;
+    font-style:normal;
+    speak:none;
+    -webkit-font-smoothing:antialiased;
+    font-size:1em;
+    line-height:1em;
+    vertical-align:baseline;
+    }
+
+// Icons
+.icon--account:before { content:"\f101"; }
+.icon--arrow:before { content:"\f102"; }
+.icon--bg-menu:before { content:"\f103"; }
+.icon--cart-empty:before { content:"\f104"; }
+.icon--cart-full:before { content:"\f105"; }

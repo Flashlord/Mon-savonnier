@@ -1,0 +1,37 @@
+/* Fonts */
+
+$fontbase : 'Roboto', sans-serif;
+$fontsecond : 'Bodoni';
+
+/* Colors */
+
+$colorwhite : #ffffff;
+$colorblack : #000000;
+$colorgold : #c3baa7;
+$colorgoldlight : #e2e1df;
+$colorgreen : #6ba471;
+$colorred : #e92561;
+
+/* Easings */
+
+$easeinout : cubic-bezier(0.215, 0.600, 0.270, 0.995);
+$easeinout2 : cubic-bezier(0.85, 0, 0.15, 1);
+
+/* Grid */
+
+$gutter : 20px;
+
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+
+$screen-md:                  1024px !default;
+$screen-md-min:              $screen-md !default;
+
+$screen-lg:                  1280px !default;
+$screen-lg-min:              $screen-lg !default;
+
+$screen-xl:                  1400px !default;
+$screen-xl-min:              $screen-xl !default;
