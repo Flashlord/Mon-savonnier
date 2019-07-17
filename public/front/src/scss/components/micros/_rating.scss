@@ -1,0 +1,94 @@
+/* -------------------------------
+   RATING STARS COMPONENT
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-rating{
+	display:inline-flex;
+	white-space:nowrap;
+
+	.icon{
+		font-size:15px;
+		margin:0 2px 0 0;
+		color:$colorgreymiddle;
+	}
+
+	&.rating--1{
+
+		.icon:nth-child(1){ color:$coloryellow; }
+	}
+
+	&.rating--2{
+
+		.icon:nth-child(1){ color:$coloryellow; }
+		.icon:nth-child(2){ color:$coloryellow; }
+	}
+
+	&.rating--3{
+
+		.icon:nth-child(1){ color:$coloryellow; }
+		.icon:nth-child(2){ color:$coloryellow; }
+		.icon:nth-child(3){ color:$coloryellow; }
+	}
+
+	&.rating--4{
+
+		.icon:nth-child(1){ color:$coloryellow; }
+		.icon:nth-child(2){ color:$coloryellow; }
+		.icon:nth-child(3){ color:$coloryellow; }
+		.icon:nth-child(4){ color:$coloryellow; }
+	}
+
+	&.rating--5{
+
+		.icon{ color:$coloryellow; }
+	}
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-rating{
+
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-rating{
+
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-rating{
+
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-rating{
+
+	}
+}
