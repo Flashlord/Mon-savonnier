@@ -1,0 +1,269 @@
+{% extends '/base.html.twig' %}
+
+{% block body %}
+
+<section class="cbo-product">
+
+	<!-- === PRODUCT TOP ============================= -->
+	<!-- ============================================= -->
+
+	<div class="product-top">
+		<div class="top-inner cbo-container">
+	
+			<!-- Product metas (category + title + price) -->
+
+			<div class="top-category cbo-bigtitle">Soins du corps</div>
+			<h1 class="top-title">Chantilly Amandi</h1>
+			<div class="top-price">8.50 €</div>
+
+			<!-- Product content -->
+
+			<div class="top-content">
+
+				<!-- Product details (description + form) -->
+
+				<div class="content-details">
+
+					<div class="details-description">
+						<h2>Petite phrase d’accroche, baseline, ...</h2>
+						<ul>
+							<li>Parfum: Amande vanillée - 50 ml -</li>
+							<li>Une véritable innovation signée POP!</li>
+							<li>Découvrez une chantilly onctueuse et délicieusement douce, fabriquée à partir de beurre de karité et d'huile de coco bio. Entièrement naturelle, elle fera une véritable alliée pour votre peau et vos cheveux.</li>
+							<li>Bio à 98%, Chantilly Amandi se glisse facilement dans votre sac. Hydratez votre visage ou vos mains et profitez de sa senteur très chaude et sucrée, parfaite pour le cocooning !</li>
+						</ul>
+					</div>
+
+					<form class="details-form">
+						<div class="form-quantity cbo-quantity">
+							<button type="button" class="quantity-less"><i class="icon icon--less"></i></button>
+							<input type="number" name="quantity" value="0" step="1" min="0" />
+							<button type="button" class="quantity-more"><i class="icon icon--more"></i></button>
+						</div>
+						<div class="form-button">
+							<button type="submit" class="cbo-button button--plain">
+								Valider ma commande
+								<i class="icon icon--arrow"></i>
+							</button>
+						</div>
+					</form>
+
+				</div>
+
+				<!-- Product pictures slider -->
+
+				<div class="content-slider owl-carousel owl-theme">
+					<a href="#" class="slider-el">
+						<img src="{{ asset('/front/dist/images/_tmp/product-detail-picture.jpg') }}" alt="" />
+					</a>
+					<a href="#" class="slider-el">
+						<img src="{{ asset('/front/dist/images/_tmp/product-detail-picture.jpg') }}" alt="" />
+					</a>
+					<a href="#" class="slider-el">
+						<img src="{{ asset('/front/dist/images/_tmp/product-detail-picture.jpg') }}" alt="" />
+					</a>
+					<a href="#" class="slider-el">
+						<img src="{{ asset('/front/dist/images/_tmp/product-detail-picture.jpg') }}" alt="" />
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- === PRODUCT PLUS ============================ -->
+	<!-- ============================================= -->
+
+	<div class="product-plus">
+		<div class="plus-inner cbo-container">
+
+			<h2 class="plus-title cbo-title-1">
+				Les plus produit
+			</h2>
+
+			<div class="plus-cols">
+				<div class="cols-el">
+					<i class="icon icon--essential-oils"></i>
+					<span>Sans huiles essentielles</span>
+				</div>
+				<div class="cols-el">
+					<i class="icon icon--vegan"></i>
+					<span>Vegan</span>
+				</div>
+				<div class="cols-el">
+					<i class="icon icon--balance"></i>
+					<span>Poids : 100g</span>
+				</div>
+				<div class="cols-el">
+					<i class="icon icon--nose"></i>
+					<span>Vanille / Cacao</span>
+				</div>
+				<div class="cols-el">
+					<i class="icon icon--greasing"></i>
+					<span>Surgraissage : 8%</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- === PRODUCT INFOS =========================== -->
+	<!-- ============================================= -->
+
+	<div class="product-infos">
+		<div class="infos-inner cbo-container">
+			<div class="infos-content">
+
+				<h2 class="content-title cbo-title-1">
+					Caractéristiques<br />
+					produit
+				</h2>
+
+				<div class="content-cols">
+					<div class="cols-el">
+						Artisan
+						<strong>POP !</strong>
+					</div>
+					<div class="cols-el">
+						Senteur
+						<strong>Amande vanillée</strong>
+					</div>
+					<div class="cols-el">
+						Poids
+						<strong>50 ml</strong>
+					</div>
+					<div class="cols-el">
+						Vegan
+						<strong>Oui</strong>
+					</div>
+					<div class="cols-el">
+						INCI
+						<strong>Butyrospermum parkii butter, Coco nucifera oil, Fragrance, CI77019, CI77891, Tocophérol, CI77492, CI77861</strong>
+					</div>
+					<div class="cols-el">
+						Huiles essentielles
+						<strong>Non</strong>
+					</div>
+				</div>
+			</div>
+			<div class="infos-picture">
+				<img src="{{ asset('/front/dist/images/_tmp/product-detail-picture.jpg') }}" alt="" />
+			</div>
+		</div>
+	</div>
+
+	<!-- === PRODUCT SIMILARS ======================== -->
+	<!-- ============================================= -->
+
+	<div class="product-similars">
+		<div class="similars-inner cbo-container">
+
+			<h2 class="similars-title cbo-title-1">
+				Ça pourrait<br />
+				vous intéresser !
+			</h2>
+
+			<div class="similars-list cbo-products">
+				<div class="products-list">
+
+					<a href="/produit" class="list-el">
+						<span class="el-inner">
+							<span class="el-picture">
+								<img class="picture" src="{{ asset('/front/dist/images/_tmp/product-list-picture.jpg') }}" alt="" />
+								<span class="el-category"><i class="icon icon--liquid-soap"></i></span>
+							</span>
+							<span class="el-title">
+								Baume à lèvre cacao / jojoba
+							</span>
+							<span class="el-price">
+								4.90 €
+							</span>
+							<span class="el-rating cbo-rating rating--4">
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+							</span>
+						</span>
+					</a>
+
+					<a href="/produit" class="list-el">
+						<span class="el-inner">
+							<span class="el-picture">
+								<img class="picture" src="{{ asset('/front/dist/images/_tmp/product-list-picture.jpg') }}" alt="" />
+								<span class="el-category"><i class="icon icon--liquid-soap"></i></span>
+							</span>
+							<span class="el-title">
+								Baume à lèvre cacao / jojoba
+							</span>
+							<span class="el-price">
+								4.90 €
+							</span>
+							<span class="el-rating cbo-rating rating--4">
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+							</span>
+						</span>
+					</a>
+
+					<a href="/produit" class="list-el">
+						<span class="el-inner">
+							<span class="el-picture">
+								<img class="picture" src="{{ asset('/front/dist/images/_tmp/product-list-picture.jpg') }}" alt="" />
+								<span class="el-category"><i class="icon icon--liquid-soap"></i></span>
+							</span>
+							<span class="el-title">
+								Baume à lèvre cacao / jojoba
+							</span>
+							<span class="el-price">
+								4.90 €
+							</span>
+							<span class="el-rating cbo-rating rating--4">
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+								<i class="icon icon--star"></i>
+							</span>
+						</span>
+					</a>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- === PRODUCT STICKY ========================== -->
+	<!-- ============================================= -->
+
+	<form class="product-sticky">
+		<div class="sticky-content">
+			<div class="content-button">
+				Chantilly Amandi
+			</div>
+			<div class="content-infos">
+				<div class="infos-price">8.50 €</div>
+				<div class="infos-quantity cbo-quantity">
+					<button type="button" class="quantity-less"><i class="icon icon--less"></i></button>
+					<input type="number" name="quantity" value="0" step="1" min="0" />
+					<button type="button" class="quantity-more"><i class="icon icon--more"></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="content-button">
+			<button type="submit" class="cbo-button button--plain button--white">
+				Valider ma commande
+				<i class="icon icon--arrow"></i>
+			</button>
+		</div>
+	</form>
+
+</section>
+
+{% endblock %}

@@ -15,9 +15,25 @@
 	text-decoration:none;
 	background:none;
 	border-radius:25px;
+	cursor:pointer;
 
 	.icon{
 		margin:0 0 0 70px;
+	}
+
+	&.button--plain{
+		background:$colorgreen;
+		color:$colorwhite;
+	}
+
+	&.button--white{
+		border-color:$colorwhite;
+		color:$colorwhite;
+
+		&.button--plain{
+			background:$colorwhite;
+			color:$colorgreen;
+		}
 	}
 }
 
@@ -52,6 +68,21 @@
 
 			.icon{
 				transform:translateX(-20px);
+			}
+		}
+
+		&.button--plain:hover{
+			background:transparent;
+			color:$colorgreen;
+		}
+
+		&.button--white{
+			background:$colorwhite;
+			color:$colorgreen;
+
+			&.button-plain{
+				background:transparent;
+				color:$colorwhite;
 			}
 		}
 	}

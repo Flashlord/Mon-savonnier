@@ -1,0 +1,79 @@
+/* -------------------------------
+   PRODUCT SIMILARS BLOCK
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-product .product-similars{
+	background:$colorwhite;
+	padding:80px 0 50px 0;
+
+	.similars-title{
+		text-align:center;
+		margin:0 0 40px 0;
+	}
+
+	.similars-list{
+		margin:0 -16px;
+		padding:0;
+	}
+}
+
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-product .product-similars{
+
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-product .product-similars{
+		padding:150px 0 100px 0;
+
+		.similars-list{
+
+			.products-list{
+				padding:0;
+			
+				.list-el{
+					width:33.3333%;
+				}
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-product .product-similars{
+
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-product .product-similars{
+
+	}
+}

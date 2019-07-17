@@ -1,0 +1,98 @@
+/* -------------------------------
+   PRODUCT PLUS BLOCK
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-product .product-plus{
+	background:$colorwhite;
+	padding:80px 0 50px 0;
+
+	.plus-title{
+		margin:0 0 40px 0;
+		text-align:center;
+	}
+
+	.plus-cols{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		align-items:stretch;
+
+		.cols-el{
+			width:50%;
+			padding:0 5px;
+			margin:0 0 35px 0;
+			color:$colorblack;
+			text-align:center;
+
+			.icon{
+				font-size:47px;
+				margin:0 0 18px 0;
+			}
+
+			span{
+				display:block;
+				font-family:$fontsecond;
+				font-size: 20px;
+				font-weight: 400;
+				font-style: italic;
+				line-height: 0.9em;
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-product .product-plus{
+
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-product .product-plus{
+
+		.plus-cols{
+
+			.cols-el{
+				width:175px;
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-product .product-plus{
+
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-product .product-plus{
+
+	}
+}

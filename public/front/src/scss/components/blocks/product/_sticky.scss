@@ -1,0 +1,57 @@
+/* -------------------------------
+   PRODUCT SIMILARS BLOCK
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-product .product-sticky{
+	display:none;
+}
+
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-product .product-sticky{
+
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-product .product-sticky{
+
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-product .product-sticky{
+
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-product .product-sticky{
+
+	}
+}

@@ -1,10 +1,8 @@
 /* -------------------------------
-   FORMS & FIELDS
-   --
-   Mobile First !
+FORMS & FIELDS
+--
+Mobile First !
 ------------------------------- */
-
-label.error{ display:none !important; }
 
 /* Inputs */
 
@@ -17,20 +15,19 @@ input[type=password],
 select,
 textarea{
 
-
 	&::placeholder{
 
-  }
+	}
 
-  &.error{
+	&.error{
 
-  }
+	}
 }
 
 /* Select */
 
 select{
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 /* Textarea */
@@ -43,29 +40,73 @@ textarea{
 
 	}
 
-  &.error{
+	&.error{
 
-  }
+	}
 }
 
 /* Checkbox, Radio */
 
 input[type=checkbox],
 input[type=radio]{
-  opacity:0;
-  width:0;
-  height:0;
-  position:absolute;
+	opacity:0;
+	width:0;
+	height:0;
+	position:absolute;
 
-  & + label{
-  }
+	& + label{
+	}
 
-  &:checked + label{
-  }
+	&:checked + label{
+	}
 }
 
+/* Numbers */
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Quantity */
+
+.cbo-quantity{
+	display:inline-flex;
+	align-items:center;
+	width:100px;
+	height:50px;
+	line-height:50px;
+	border:2px solid $colorgreen;
+
+	button{
+		background:none;
+		border:none;
+		font-size:12px;
+		color:$colorblack;
+		min-width:30px;
+		text-align:center;
+		padding:0;
+		cursor:pointer;
+	}
+
+	input{
+		background:none;
+		border:none;
+		width:100%;
+		text-align:center;
+		color:$colorblack;
+		font-size:22px;
+		font-weight:bold;
+	}
+}
+
+
 /* -------------------------------
-   SMALL SCREENS
+SMALL SCREENS
 ------------------------------- */
 
 @media (min-width: $screen-sm-min) {
@@ -74,7 +115,7 @@ input[type=radio]{
 
 
 /* -------------------------------
-   MEDIUM SCREENS
+MEDIUM SCREENS
 ------------------------------- */
 
 @media (min-width: $screen-md-min) {
@@ -83,7 +124,7 @@ input[type=radio]{
 
 
 /* -------------------------------
-   LARGE SCREENS
+LARGE SCREENS
 ------------------------------- */
 
 @media (min-width: $screen-lg-min) {
@@ -92,9 +133,9 @@ input[type=radio]{
 
 
 /* -------------------------------
-   EXTRA LARGE SCREENS
+EXTRA LARGE SCREENS
 ------------------------------- */
 
 @media (min-width: $screen-xl-min) {
-	
+
 }

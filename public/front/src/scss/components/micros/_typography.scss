@@ -7,12 +7,13 @@
 /* Titles */
 
 h1, .cbo-title-1,
-h2, .cbo-title-2,
-h3, .cbo-title-3{ }
-
-h1, .cbo-title-1{ }
-h2, .cbo-title-2{ }
-h3, .cbo-title-3{ }
+h2, .cbo-title-2{ 
+   color:$colorblack;
+   font-family:$fontsecond;
+   font-size:30px;
+   font-weight:400;
+   line-height:1.1333em;
+}
 
 .cbo-cms{
 
@@ -66,9 +67,8 @@ h3, .cbo-title-3{ }
 
 @media (min-width: $screen-md-min) {
 
-	h1, .cbo-title-1{ }
-   h2, .cbo-title-2{ }
-   h3, .cbo-title-3{  }
+	h1, .cbo-title-1{ font-size:40px; }
+   h2, .cbo-title-2{ font-size:28px; }
 
    .cbo-bigtitle{
       font-size:152px;

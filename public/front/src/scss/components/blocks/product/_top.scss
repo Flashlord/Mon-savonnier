@@ -1,0 +1,139 @@
+/* -------------------------------
+   PRODUCT TOP BLOCK
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-product .product-top{
+	
+	.top-title{
+		text-align:center;
+		margin-top:-20px;
+		margin-bottom:20px;
+	}
+
+	.top-price{
+		text-align:center;
+		color:$colorgreen;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	.top-content{
+		padding-top:80px;
+		padding-bottom:80px;
+
+		.content-details{
+			margin-bottom:45px;
+
+			.details-description{
+
+				h2{
+					margin-bottom:40px;
+				}
+
+				p, ul{
+					padding:0;
+					margin:30px 0;
+					font-size:15px;
+					line-height:1.7333em;
+				}
+
+				li{
+					margin:0 0 30px 20px;
+				}
+			}
+
+			.details-form{
+				text-align:center;
+
+				.form-quantity{
+					margin-bottom:20px;
+				}
+			}
+		}
+
+		.content-slider{
+
+			img{
+				display:block;
+				width:100%;
+				height:auto;
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-product .product-top{
+
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-product .product-top{
+
+		.top-content{
+			display:flex;
+
+			.content-details{
+				width:50%;
+				padding-right:50px;
+
+				.details-form{
+					text-align:left;
+					margin-top:40px;
+				
+					.form-quantity{
+						margin:0;
+						text-align:center;
+					}
+
+					.form-button{
+						float:right;
+					}
+				}
+			}
+
+			.content-slider{
+				width:50%;
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-product .product-top{
+
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-product .product-top{
+
+	}
+}

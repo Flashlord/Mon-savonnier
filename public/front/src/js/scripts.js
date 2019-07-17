@@ -12,8 +12,10 @@ var Master = {
         this.init_body_nav();
         this.scroll_slides();
         this.init_footer();
+        this.init_quantity();
 
         this.init_block_products();
+        this.init_block_product();
         this.init_block_catslider();
     },
 
@@ -119,6 +121,28 @@ var Master = {
         });
     },
 
+    init_quantity : function(){
+
+        $('.cbo-quantity button').on('click', function(){
+
+            var $input = $(this).parent().find('input');
+            var quantity = $input.val();
+            var min = $input.attr('min');
+            var max = $input.attr('max');
+
+            if($(this).hasClass('quantity-less')){
+                if((quantity > min || typeof(min) == 'undefined'))
+                    quantity--;
+            }
+            else{ 
+                if(quantity < max || typeof(max) == 'undefined')
+                    quantity++;
+            }
+
+            $input.val( quantity );
+        });
+    },
+
     init_footer : function(){
 
         $('.cbo-footer .footer-bottom .col-title').on('click', function(e){
@@ -135,6 +159,20 @@ var Master = {
 
         $('.cbo-products .products-filters .box-head').on('click', function(){
             $(this).parent().toggleClass('active');
+        });
+    },
+
+    init_block_product : function(){
+
+        var $slider = $('.cbo-product .product-top .top-content .content-slider');
+
+        // Owl Carousel instance
+        $slider.owlCarousel({
+            items:1,
+            margin:20,
+            smartSpeed:300,
+            nav:false,
+            dots:false
         });
     },
 
