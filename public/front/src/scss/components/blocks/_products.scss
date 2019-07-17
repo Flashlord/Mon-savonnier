@@ -1,0 +1,354 @@
+/* -------------------------------
+   PRODUCTS BLOCK
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-products{
+	background:$colorwhite;
+	padding:8px;
+
+	.products-filters{
+		padding:16px;
+		margin:30px 0;
+		padding:0 8px;
+
+		.filters-head{
+			display:block;
+			background:none;
+			border:none;
+			color: $colorgrey;
+			font-family: $fontsecond;
+			font-size: 24px;
+			font-weight: 400;
+			padding:20px;
+			position:relative;
+			width:100%;
+			text-align:left;
+			cursor:pointer;
+			background:$colorgreylight;
+			border-bottom:1px solid #dededc;
+
+			.icon{
+				font-size:12px;
+				position:absolute;
+				color:$colorblack;
+				top:50%; right:20px;
+				margin-top:-5px;
+				transition:transform .3s;
+			}
+
+			.icon--less{
+				transform:scale(0);
+			}
+		}
+
+		.filters-box{
+			background:$colorgreylight;
+			border-bottom:1px solid #dededc;
+			display:none;
+
+			.box-head{
+				display:block;
+				background:none;
+				border:none;
+				color: $colorgrey;
+				font-family: $fontsecond;
+				font-size: 24px;
+				font-weight: 400;
+				padding:20px;
+				position:relative;
+				width:100%;
+				text-align:left;
+				cursor:pointer;
+
+				.icon{
+					font-size:12px;
+					position:absolute;
+					color:$colorblack;
+					top:50%; right:20px;
+					margin-top:-5px;
+					transition:transform .3s;
+				}
+
+				.icon--less{
+					transform:scale(0);
+				}
+			}
+
+			.box-choices{
+				padding:0 20px 20px 20px;
+				display:none;
+			
+				input{
+
+					& + label{
+						position:relative;
+						display:block;
+						color: $colorblack;
+						font-family: $fontsecond;
+						font-size: 22px;
+						padding:0 0 0 35px;
+						margin:0 0 15px 0;
+						cursor:pointer;
+
+						&:before{
+							content:'';
+							display:block;
+							width:14px;
+							height:14px;
+							border-radius:50%;
+							border:1px solid $colorblack;
+							position:absolute;
+							top:4px; left:0;
+						}
+
+						&:after{
+							content:'';
+							display:block;
+							width:8px;
+							height:8px;
+							border-radius:50%;
+							background:$colorblack;
+							position:absolute;
+							top:8px; left:4px;
+							transform:scale(0);
+							transition:transform .3s $easeinout;
+						}
+					}
+
+					&:checked + label{
+
+						&:after{
+							transform:scale(1);
+						}
+					}
+				}
+			}
+
+			&:last-child{
+				border:none;
+			}
+
+			&.active{
+
+				.box-head{
+
+					.icon--less{ transform:scale(1); }
+					.icon--more{ transform:scale(0); }
+				}
+
+				.box-choices{
+					display:block;
+				}
+			}
+		}
+
+		&.active{
+
+			.filters-head{
+
+				.icon--less{ transform:scale(1); }
+				.icon--more{ transform:scale(0); }
+			}
+
+			.filters-box{
+				display:block;
+			}
+		}
+	}
+
+	.products-list{
+		padding:0 0 50px 0;
+
+		.list-el{
+			display:block;
+			padding:8px;
+			color:$colorblack;
+			margin:0 0 30px 0;
+			text-decoration:none;
+
+			&.el--outofstock{
+
+				.el-title,
+				.el-price,
+				.el-rating{
+					opacity:.35;
+				}
+			}
+
+			.el-inner{
+				display:block;
+				position:relative;
+			}
+
+			.el-picture{
+				display:block;
+				position:relative;
+				padding-bottom:73.7%;
+				height:0;
+				margin:0 0 10px 0;
+
+				img.picture{
+					display:block;
+					width:100%;
+					height:100%;
+					position:absolute;
+					top:0; left:0;
+					object-fit:cover;
+				}
+			}
+
+			.el-outofstock{
+				display:flex;
+				position:absolute;
+				top:0; left:0;
+				width:100%;
+				height:100%;
+				align-items:center;
+				justify-content:center;
+				color:$colorwhite;
+				text-transform:uppercase;
+				text-align:center;
+				font-size:30px;
+				line-height:1em;
+				font-weight:bold;
+				background:rgba(0,0,0,.6);
+
+				strong{
+					display:block;
+					font-weight:900;
+				}
+
+				img{
+					display:block;
+					position:absolute;
+					width:auto;
+					height:auto;
+
+					&:first-child{
+						top:0;
+						left:0;
+					}
+
+					&:last-child{
+						bottom:0;
+						right:0;
+						transform:rotate(-180deg);
+					}
+				}
+			}
+
+			.el-title{
+				display:block;
+				font-family: $fontsecond;
+				font-size: 22px;
+				font-weight: 400;
+				line-height: 1em;
+				margin:0 0 5px 0;
+			}
+
+			.el-price{
+				display:block;
+				color: $colorgrey;
+				font-family: $fontsecond;
+				font-size: 22px;
+				font-weight: 400;
+				line-height: 1em;
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-products{
+
+		.products-list{
+			display:flex;
+			align-items:stretch;
+			flex-wrap:wrap;
+
+			.list-el{
+				width:50%;
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-products{
+		padding-top:100px;
+		padding-bottom:150px;
+
+		.products-inner{
+			display:flex;
+		}
+
+		.products-filters{
+			min-width:330px;
+			width:330px;
+			padding:30px;
+			margin:0;
+
+			.filters-head{
+				display:none;
+			}
+
+			.filters-box{
+				display:block;
+			}
+		}
+
+		.products-list{
+			padding:22px 22px 22px 0;
+		}
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-products{
+
+		.products-list{
+
+			.list-el{
+				width:33.3333%;
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-products{
+
+		.products-list{
+
+			.list-el{
+				width:25%;
+			}
+		}
+	}
+}

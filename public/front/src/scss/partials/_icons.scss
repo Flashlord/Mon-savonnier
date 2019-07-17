@@ -2,11 +2,11 @@
 
 @font-face {
     font-family:"icons";
-    src: url("../fonts/icons.eot?b330832c93663e26c6587dab9b1d6f1f");
-    src: url("../fonts/icons.eot?b330832c93663e26c6587dab9b1d6f1f#iefix") format("embedded-opentype"),
-		url("../fonts/icons.woff?b330832c93663e26c6587dab9b1d6f1f") format("woff"),
-		url("../fonts/icons.ttf?b330832c93663e26c6587dab9b1d6f1f") format("truetype"),
-		url("../fonts/icons.svg?b330832c93663e26c6587dab9b1d6f1f#icons") format("svg");
+    src: url("../fonts/icons.eot?eac653721bd3ea54be11d3aa54615776");
+    src: url("../fonts/icons.eot?eac653721bd3ea54be11d3aa54615776#iefix") format("embedded-opentype"),
+		url("../fonts/icons.woff?eac653721bd3ea54be11d3aa54615776") format("woff"),
+		url("../fonts/icons.ttf?eac653721bd3ea54be11d3aa54615776") format("truetype"),
+		url("../fonts/icons.svg?eac653721bd3ea54be11d3aa54615776#icons") format("svg");
     font-weight:normal;
     font-style:normal;
     }
@@ -28,3 +28,6 @@
 .icon--bg-menu:before { content:"\f103"; }
 .icon--cart-empty:before { content:"\f104"; }
 .icon--cart-full:before { content:"\f105"; }
+.icon--less:before { content:"\f106"; }
+.icon--liquid-soap:before { content:"\f107"; }
+.icon--more:before { content:"\f108"; }

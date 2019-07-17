@@ -1,0 +1,226 @@
+{% extends '/base.html.twig' %}
+
+{% block body %}
+
+<section class="cbo-cathead">
+	<div class="cathead-inner">
+
+		<h1 class="cathead-title cbo-bigtitle">Soins du corps</h1>
+		<div class="cathead-content">
+
+			<div class="content-picture">
+				<img src="{{ asset('/front/dist/images/_tmp/home-slider-3.png') }}" alt="Soins du corps" />
+			</div>
+			<div class="content-text cbo-chapo">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc neque, scelerisque vitae leo at, suscipit porta tortor. Morbi porttitor egestas elementum. Duis sed eros vitae orci facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed eros vitae orci facilisis.
+				</p>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<section class="cbo-products">
+	<div class="products-inner">
+
+		<!-- Filters -->
+
+		<div class="products-filters">
+
+			<!-- Filters toggle -->
+
+			<button class="filters-head">
+				Filtrer
+				<i class="icon icon--less"></i>
+				<i class="icon icon--more"></i>
+			</button>
+
+			<!-- Catégories -->
+
+			<div class="filters-box">
+				<button class="box-head">
+					Catégories
+					<i class="icon icon--less"></i>
+					<i class="icon icon--more"></i>
+				</button>
+				<div class="box-choices">
+					
+					<input type="checkbox" name="category[]" id="category_1" />
+					<label for="category_1">Soins du corps</label>
+
+					<input type="checkbox" name="category[]" id="category_2" />
+					<label for="category_2">Savons</label>
+
+					<input type="checkbox" name="category[]" id="category_3" />
+					<label for="category_3">Shampoings</label>
+
+					<input type="checkbox" name="category[]" id="category_4" />
+					<label for="category_4">Porte savons</label>
+
+					<input type="checkbox" name="category[]" id="category_5" />
+					<label for="category_5">Vegan</label>
+				
+				</div>
+			</div>
+
+			<!-- Senteurs -->
+
+			<div class="filters-box">
+				<button class="box-head">
+					Les senteurs
+					<i class="icon icon--less"></i>
+					<i class="icon icon--more"></i>
+				</button>
+				<div class="box-choices">
+					
+					<input type="checkbox" name="smell[]" id="smell_1" />
+					<label for="smell_1">Noix de coco</label>
+
+					<input type="checkbox" name="smell[]" id="smell_2" />
+					<label for="smell_2">Amande douce</label>
+
+					<input type="checkbox" name="smell[]" id="smell_3" />
+					<label for="smell_3">Pet matinal</label>
+
+					<input type="checkbox" name="smell[]" id="smell_4" />
+					<label for="smell_4">Vanille</label>
+
+					<input type="checkbox" name="smell[]" id="smell_5" />
+					<label for="smell_5">Festivalier</label>
+				
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Products list -->
+
+		<div class="products-list">
+
+			<span class="list-el el--outofstock">
+				<span class="el-inner">
+					<span class="el-picture">
+						<img class="picture" src="{{ asset('/front/dist/images/_tmp/product-list-picture.jpg') }}" alt="" />
+						<span class="el-category"><i class="icon icon--liquid-soap"></i></span>
+						<span class="el-outofstock">
+							<img src="{{ asset('/front/dist/images/products/outofstock-leaves.png') }}" alt="" />
+							<span><strong>Rupture</strong> de stock</span>
+							<img src="{{ asset('/front/dist/images/products/outofstock-leaves.png') }}" alt="" />
+						</span>
+					</span>
+					<span class="el-title">
+						Baume à lèvre cacao / jojoba
+					</span>
+					<span class="el-price">
+						4.90 €
+					</span>
+					<span class="el-rating cbo-rating">
+						<span class="rating-stars"></span>
+						<span class="rating-fill" style="width:80%;"></span>
+					</span>
+				</span>
+			</span>
+
+			<a href="#" class="list-el">
+				<span class="el-inner">
+					<span class="el-picture">
+						<img class="picture" src="{{ asset('/front/dist/images/_tmp/product-list-picture.jpg') }}" alt="" />
+						<span class="el-category"><i class="icon icon--liquid-soap"></i></span>
+					</span>
+					<span class="el-title">
+						Baume à lèvre cacao / jojoba
+					</span>
+					<span class="el-price">
+						4.90 €
+					</span>
+					<span class="el-rating cbo-rating">
+						<span class="rating-stars"></span>
+						<span class="rating-fill" style="width:80%;"></span>
+					</span>
+				</span>
+			</a>
+
+			<a href="#" class="list-el">
+				<span class="el-inner">
+					<span class="el-picture">
+						<img class="picture" src="{{ asset('/front/dist/images/_tmp/product-list-picture.jpg') }}" alt="" />
+						<span class="el-category"><i class="icon icon--liquid-soap"></i></span>
+					</span>
+					<span class="el-title">
+						Baume à lèvre cacao / jojoba
+					</span>
+					<span class="el-price">
+						4.90 €
+					</span>
+					<span class="el-rating cbo-rating">
+						<span class="rating-stars"></span>
+						<span class="rating-fill" style="width:80%;"></span>
+					</span>
+				</span>
+			</a>
+
+			<a href="#" class="list-el">
+				<span class="el-inner">
+					<span class="el-picture">
+						<img class="picture" src="{{ asset('/front/dist/images/_tmp/product-list-picture.jpg') }}" alt="" />
+						<span class="el-category"><i class="icon icon--liquid-soap"></i></span>
+					</span>
+					<span class="el-title">
+						Baume à lèvre cacao / jojoba
+					</span>
+					<span class="el-price">
+						4.90 €
+					</span>
+					<span class="el-rating cbo-rating">
+						<span class="rating-stars"></span>
+						<span class="rating-fill" style="width:80%;"></span>
+					</span>
+				</span>
+			</a>
+
+			<a href="#" class="list-el">
+				<span class="el-inner">
+					<span class="el-picture">
+						<img class="picture" src="{{ asset('/front/dist/images/_tmp/product-list-picture.jpg') }}" alt="" />
+						<span class="el-category"><i class="icon icon--liquid-soap"></i></span>
+					</span>
+					<span class="el-title">
+						Baume à lèvre cacao / jojoba
+					</span>
+					<span class="el-price">
+						4.90 €
+					</span>
+					<span class="el-rating cbo-rating">
+						<span class="rating-stars"></span>
+						<span class="rating-fill" style="width:80%;"></span>
+					</span>
+				</span>
+			</a>
+
+			<a href="#" class="list-el">
+				<span class="el-inner">
+					<span class="el-picture">
+						<img class="picture" src="{{ asset('/front/dist/images/_tmp/product-list-picture.jpg') }}" alt="" />
+						<span class="el-category"><i class="icon icon--liquid-soap"></i></span>
+					</span>
+					<span class="el-title">
+						Baume à lèvre cacao / jojoba
+					</span>
+					<span class="el-price">
+						4.90 €
+					</span>
+					<span class="el-rating cbo-rating">
+						<span class="rating-stars"></span>
+						<span class="rating-fill" style="width:80%;"></span>
+					</span>
+				</span>
+			</a>
+
+		</div>
+
+	</div>
+</section>
+
+{% endblock %}

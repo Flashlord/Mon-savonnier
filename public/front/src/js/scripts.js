@@ -12,6 +12,7 @@ var Master = {
         this.init_body_nav();
         this.scroll_slides();
 
+        this.init_block_products();
         this.init_block_catslider();
     },
 
@@ -114,6 +115,17 @@ var Master = {
         $('.cbo-header .header-burger').on('click', function(e){
             e.preventDefault();
             $('body').toggleClass('body--nav');
+        });
+    },
+
+    init_block_products : function(){
+
+        $('.cbo-products .products-filters .filters-head').on('click', function(){
+            $(this).parent().toggleClass('active');
+        });
+
+        $('.cbo-products .products-filters .box-head').on('click', function(){
+            $(this).parent().toggleClass('active');
         });
     },
 

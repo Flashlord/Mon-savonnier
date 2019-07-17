@@ -8,17 +8,11 @@
 
 h1, .cbo-title-1,
 h2, .cbo-title-2,
-h3, .cbo-title-3{ margin:.75em 0; line-height:1.35em; }
+h3, .cbo-title-3{ }
 
-h1, .cbo-title-1{ font-size:28px; text-transform:uppercase; }
-h2, .cbo-title-2{ font-size:16px; font-weight:600; }
-h3, .cbo-title-3{ font-size:24px; text-transform:uppercase; }
-
-.cbo-sectiontitle{
-   text-transform:uppercase;
-   font-weight:bold;
-   font-size:22px;
-}
+h1, .cbo-title-1{ }
+h2, .cbo-title-2{ }
+h3, .cbo-title-3{ }
 
 .cbo-cms{
 
@@ -41,14 +35,18 @@ h3, .cbo-title-3{ font-size:24px; text-transform:uppercase; }
 }
 
 .cbo-chapo{
-   font-weight:600 !important;
-   line-height:1.35em;
+   color: $colorblack;
+   font-family: $fontsecond;
+   font-size: 22px;
+   font-weight: 400;
+   line-height: 1.2em;
 }
 
 .cbo-bigtitle{
    color: $colorgoldlight;
    font-family: $fontsecond;
    font-size: 50px;
+   font-weight:normal;
    line-height: 1em;
    text-align:center;
 }
@@ -68,13 +66,9 @@ h3, .cbo-title-3{ font-size:24px; text-transform:uppercase; }
 
 @media (min-width: $screen-md-min) {
 
-	h1, .cbo-title-1{ font-size:28px; }
-   h2, .cbo-title-2{ font-size:18px; }
-   h3, .cbo-title-3{ font-size:28px; }
-
-   .cbo-chapo{
-      font-size:18px;
-   }
+	h1, .cbo-title-1{ }
+   h2, .cbo-title-2{ }
+   h3, .cbo-title-3{  }
 
    .cbo-bigtitle{
       font-size:152px;

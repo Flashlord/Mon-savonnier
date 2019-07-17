@@ -1,0 +1,100 @@
+/* -------------------------------
+   CATHEAD BLOCK
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-cathead{
+	width:90%;
+	max-width:950px;
+	margin:0 auto;
+	padding:0 0 50px 0;
+
+	.cathead-title{
+		margin:0;
+	}
+
+	.cathead-content{
+
+		.content-picture{
+			display:none;
+		}
+
+		.content-text{
+			text-align:center;
+		}
+	}
+}
+
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-cathead{
+
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-cathead{
+
+		.cathead-content{
+			display:flex;
+			align-items:center;
+			margin-top:-15%;
+
+			.content-picture{
+				display:block;
+				width:60%;
+				margin-left:-10%;
+
+				img{
+					display:block;
+					width:100%;
+					height:auto;
+				}
+			}
+
+			.content-text{
+				position:relative;
+				width:60%;
+				margin-left:-10%;
+				padding-left:50px;
+				text-align:left;
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-cathead{
+
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-cathead{
+
+	}
+}
