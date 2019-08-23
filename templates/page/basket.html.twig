@@ -1,0 +1,106 @@
+{% extends '/base.html.twig' %}
+
+{% block body %}
+
+<!-- EMPTY CART -->
+
+<section class="cbo-cart">
+	<div class="cart-inner cbo-container">
+
+		<div class="cart-title">
+			<h1 class="cbo-bigtitle">Votre panier</h1>
+			<h2 class="cbo-title-1">Contenu<br />de votre panier</h2>
+		</div>
+
+		<div class="cart-empty">
+			<img src="{{ asset('/front/dist/images/cart/empty-cart.svg') }}" alt="Votre panier est vide !" />
+			<h3 class="cbo-title-2">Votre panier est vide !</h3>
+			<a href="/" class="cbo-button">
+				Revenir à la boutique
+				<i class="icon icon--arrow"></i>
+			</a>
+		</div>
+
+	</div>
+</section>
+
+<!-- FULL CART -->
+
+<section class="cbo-cart">
+	<div class="cart-inner cbo-container">
+
+		<div class="cart-title">
+			<h1 class="cbo-bigtitle">Votre panier</h1>
+			<h2 class="cbo-title-1">Contenu<br />de votre panier</h2>
+		</div>
+
+		<div class="cart-summary">
+			<div class="summary-price">Total TTC : 19,30 €</div>
+			<div class="summary-taxes">Dont TVA : 3,86 €</div>
+			<div class="summary-buttons">
+				<a href="/" class="cbo-button">
+					Continuer vos achats
+					<i class="icon icon--arrow arrow--back"></i>
+				</a>
+				<a href="/" class="cbo-button button--plain">
+					Valider ma commande
+					<i class="icon icon--arrow arrow--back"></i>
+				</a>
+			</div>
+		</div>
+
+		<div class="cart-products">
+
+			<div class="products-el">
+				<div class="el-inner">
+					<div class="el-picture">
+						<img class="picture" src="{{ asset('/front/dist/images/_tmp/cart-product-picture.png') }}" alt="" />
+					</div>
+					<div class="el-content">
+						<div class="content-title cbo-title-2">Baume à lèvre cacao / jojoba</div>
+						<div class="content-price cbo-title-2">Prix unitaire : 4.90€</div>
+						<div class="content-bottom">
+							<form class="bottom-quantity cbo-quantity">
+								<button type="button" class="quantity-less"><i class="icon icon--less"></i></button>
+								<input type="number" name="quantity" value="0" step="1" min="0" />
+								<button type="button" class="quantity-more"><i class="icon icon--more"></i></button>
+							</form>
+							<div class="bottom-total">Prix total : 4.90€</div>
+						</div>
+					</div>
+					<a href="#" class="el-remove">
+						<i class="icon icon--cross"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="products-el">
+				<div class="el-inner">
+					<div class="el-picture">
+						<img class="picture" src="{{ asset('/front/dist/images/_tmp/cart-product-picture.png') }}" alt="" />
+					</div>
+					<div class="el-content">
+						<div class="content-title cbo-title-2">Baume à lèvre cacao / jojoba</div>
+						<div class="content-price cbo-title-2">Prix unitaire : 4.90€</div>
+						<div class="content-bottom">
+							<form class="bottom-quantity cbo-quantity">
+								<button type="button" class="quantity-less"><i class="icon icon--less"></i></button>
+								<input type="number" name="quantity" value="0" step="1" min="0" />
+								<button type="button" class="quantity-more"><i class="icon icon--more"></i></button>
+							</form>
+							<div class="bottom-total">Prix total : 4.90€</div>
+						</div>
+					</div>
+					<a href="#" class="el-remove">
+						<i class="icon icon--cross"></i>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+
+{% endblock %}
