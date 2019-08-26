@@ -1,0 +1,122 @@
+{% extends '/base.html.twig' %}
+
+{% block body %}
+
+<section class="cbo-tunnel">
+	<div class="tunnel-inner">
+
+		<!-- Tunnel content part -->
+
+		<div class="tunnel-content">
+
+			<div class="content-breadcrumbs">
+				<a href="/votre-panier">Panier</a>
+				<span class="sep">&gt;</span>
+				<a href="/livraison">Livraison</a>
+				<span class="sep">&gt;</span>
+				<span class="current">Paiment</span>
+				<span class="sep">&gt;</span>
+				<span class="next">Confirmation</span>
+			</div>
+			<h1 class="content-title">
+				Choisissez votre<br />
+				mode de paiement
+			</h1>
+			<div class="content-choices choices--payment">
+				<input type="radio" name="payment" id="payment1" value="credit-cards" />
+				<label for="payment1">
+					<span class="inner">
+						<span class="picture">
+							<img src="{{ asset('/front/dist/images/payment/credit-cards.png') }}" alt="" />
+						</span>
+						<span class="name">
+							Paiement par
+							<strong>carte bancaire</strong>
+						</span>
+					</span>
+				</label>
+				<input type="radio" name="payment" id="payment2" value="paypal" />
+				<label for="payment2">
+					<span class="inner">
+						<span class="picture">
+							<img src="{{ asset('/front/dist/images/payment/paypal.png') }}" alt="" />
+						</span>
+						<span class="name">
+							Paiement par
+							<strong>Paypal</strong>
+						</span>
+					</span>
+				</label>
+				<input type="radio" name="payment" id="payment3" value="bank-check" />
+				<label for="payment3">
+					<span class="inner">
+						<span class="picture">
+							<img src="{{ asset('/front/dist/images/payment/bank-check.png') }}" alt="" />
+						</span>
+						<span class="name">
+							Paiement par
+							<strong>chèque</strong>
+						</span>
+					</span>
+				</label>
+			</div>
+		</div>
+
+		<!-- Tunnel sidebar summary part -->
+
+		<div class="tunnel-sidebar">
+			<div class="sidebar-inner">
+
+				<h3 class="sidebar-title cbo-title-1">Récapitulatif</h3>
+
+				<div class="sidebar-products">
+					<div class="products-el">
+						<div class="el-picture">
+							<img class="picture-file" src="{{ asset('/front/dist/images/_tmp/product-order-picture.png') }}" alt="" />
+							<span class="picture-quantity">1</span>
+						</div>
+						<div class="el-content">
+							<div class="content-name cbo-title-2">Baume à lèvre cacao / jojoba</div>
+							<div class="content-price cbo-title-2"><span class="hilight">4.90 €</div>
+						</div>
+					</div>
+					<div class="products-el">
+						<div class="el-picture">
+							<img class="picture-file" src="{{ asset('/front/dist/images/_tmp/product-order-picture.png') }}" alt="" />
+							<span class="picture-quantity">1</span>
+						</div>
+						<div class="el-content">
+							<div class="content-name cbo-title-2">Baume à lèvre cacao / jojoba</div>
+							<div class="content-price cbo-title-2"><span class="hilight">4.90 €</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sidebar-summary">
+					<div class="summary-row">
+						<span class="row-label">Sous-total du panier</span>
+						<span class="row-value">19,30 &euro;</span>
+					</div>
+					<div class="summary-row">
+						<span class="row-label">Livraison</span>
+						<span class="row-value">0,00 &euro;</span>
+					</div>
+					<div class="summary-row row--total">
+						<span class="row-label">Sous-total TTC</span>
+						<span class="row-value">19,30 &euro;</span>
+					</div>
+					<div class="summary-button">
+						<a href="#" class="cbo-button button--plain">
+							Valider ma commande
+							<i class="icon icon--arrow"></i>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</section>
+
+{% endblock %}
