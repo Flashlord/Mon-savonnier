@@ -1,0 +1,247 @@
+/* -------------------------------
+   TUNNEL BLOCK
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-tunnel{
+
+	.tunnel-content{
+		padding:20px;
+
+		.content-breadcrumbs{
+			color: $colorblack;
+			font-family: $fontsecond;
+			font-size: 15px;
+			font-weight: 500;
+			white-space:nowrap;
+			margin:-40px 0 40px 0;
+
+			.sep{
+				display:inline-block;
+				font-size:12px;
+			}
+
+			a{
+				color:$colorblack;
+				text-decoration:none;
+			}
+
+			.current{
+				color:$colorgreen;
+
+				& + .sep{
+					color:$colorgreen;
+				}
+			}
+
+			.next{
+				color: #868583;
+
+				& + .sep{
+					color:#868583;
+				}
+			}
+		}
+
+		.content-title{
+			text-align:center;
+		}
+	}
+
+	.tunnel-sidebar{
+
+		.sidebar-inner{
+			padding:20px;
+			background:$colorgoldlight;
+		}
+
+		.sidebar-title{
+			text-align:center;
+		}
+
+		.sidebar-products{
+
+			.products-el{
+				display:flex;
+				align-items:center;
+				padding:20px 0;
+				border-bottom:2px solid #b5b4b2;
+
+				.el-picture{
+					position:relative;
+					width:25%;
+
+					.picture-file{
+						display:block;
+						width:100%;
+						height:auto;
+					}
+
+					.picture-quantity{
+						display:block;
+						position:absolute;
+						width:24px;
+						height:24px;
+						top:-12px; right:-12px;
+						border-radius:50%;
+						background:$colorgreen;
+						line-height:24px;
+						text-align:center;
+						color:$colorwhite;
+						font-size:15px;
+					}
+				}
+
+				.el-content{
+					width:75%;
+					padding:0 0 0 20px;
+
+					.cbo-title-2{
+						font-size:22px;
+					}
+				}
+			}
+		}
+
+		.sidebar-summary{
+			padding:20px 0;
+
+			.summary-row{
+				padding:5px 0;
+
+				.row-value{
+					float:right;
+					font-weight:bold;
+				}
+
+				&.row--total{
+					padding-top:10px;
+					font-size:20px;
+
+					.row-label{
+						font-weight:bold;
+					}
+
+					.row-value{
+						color:$colorgreen;
+					}
+				}
+			}
+
+			.summary-button{
+				padding:30px 0;
+				text-align:center;
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-tunnel{
+
+		.tunnel-inner{
+			position:relative;
+			display:flex;
+			align-items:stretch;
+		}
+
+		.tunnel-content{
+			width:100%;
+		}
+
+		.tunnel-sidebar{
+			width:40%;
+			min-width:300px;
+			max-width:460px;
+			position:relative;
+
+			&:before{
+				content:'';
+				display:block;
+				width:100%;
+				height:200%;
+				position:absolute;
+				top:-50%; 
+				bottom:0;
+				background:$colorgoldlight;
+			}
+
+			.sidebar-inner{
+				position:relative;
+				max-width:460px;
+				padding-top:10px;
+			}
+
+			.sidebar-products{
+				margin-top:37px;
+			}
+
+			.sidebar-summary{
+
+				.summary-button{
+					text-align:right;
+				}
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-tunnel{
+
+		.tunnel-content{
+
+			.content-breadcrumbs{
+				margin-top:0;
+			}
+		}
+
+		.tunnel-sidebar{
+
+			.sidebar-inner{
+				padding-top:0;
+			}
+
+			.sidebar-products{
+				margin-top:0;
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-tunnel{
+		
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-tunnel{
+
+	}
+}
