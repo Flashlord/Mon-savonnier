@@ -17,6 +17,13 @@
 			display:block;
 			margin:20px 0;
 			cursor:pointer;
+			font-family:$fontbase;
+
+			&:before,
+			&:after{
+				content:none;
+				display:none;
+			}
 
 			.inner{
 				display:block;

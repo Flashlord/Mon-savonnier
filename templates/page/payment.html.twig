@@ -27,7 +27,7 @@
 				<label for="payment1">
 					<span class="inner">
 						<span class="picture">
-							<img src="{{ asset('/front/dist/images/payment/credit-cards.png') }}" alt="" />
+							<img src="{{ asset('/front/dist/images/payment/credit-cards.png') }}" alt="Carte bancaire" />
 						</span>
 						<span class="name">
 							Paiement par
@@ -39,7 +39,7 @@
 				<label for="payment2">
 					<span class="inner">
 						<span class="picture">
-							<img src="{{ asset('/front/dist/images/payment/paypal.png') }}" alt="" />
+							<img src="{{ asset('/front/dist/images/payment/paypal.png') }}" alt="Paypal" />
 						</span>
 						<span class="name">
 							Paiement par
@@ -51,7 +51,7 @@
 				<label for="payment3">
 					<span class="inner">
 						<span class="picture">
-							<img src="{{ asset('/front/dist/images/payment/bank-check.png') }}" alt="" />
+							<img src="{{ asset('/front/dist/images/payment/bank-check.png') }}" alt="Chèque de banque" />
 						</span>
 						<span class="name">
 							Paiement par
@@ -59,6 +59,47 @@
 						</span>
 					</span>
 				</label>
+			</div>
+			<div class="content-payment">
+				<div class="payment-box">
+					<div class="box-title cbo-title-2">
+						Remplissez les informations de votre carte bancaire
+					</div>
+					<form class="box-form cbo-form" action="/paiement" method="post">
+						<div class="form-field">
+							<input type="text" class="form-number" placeholder="Numéro de carte" />
+						</div>
+						<div class="form-row">
+							<div class="form-field">
+								<input type="text" class="form-date" placeholder="MM/AA" />
+							</div>
+							<div class="form-field">
+								<input type="number" class="form-cvv" placeholder="CVV" />
+							</div>
+						</div>
+						<div class="form-field">
+							<input type="checkbox" name="memorize" id="paymentMemorize" />
+							<label for="paymentMemorize">
+								Mémoriser ma carte
+							</label>
+						</div>
+						<div class="form-field">
+							<input type="checkbox" name="CGV" id="paymentCGV" />
+							<label for="paymentCGV">
+								J’ai lu et j’accepte les <a href="#">Conditions Générales de Vente</a>
+							</label>
+						</div>
+						<div class="form-submit">
+							<button type="submit" class="cbo-button button--plain">
+								Valider ma commande
+								<i class="icon icon--arrow"></i>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="payment-footer">
+					<img src="{{ asset('/front/dist/images/payment/paygreen.png') }}" alt="Paygreen" />
+				</div>
 			</div>
 		</div>
 

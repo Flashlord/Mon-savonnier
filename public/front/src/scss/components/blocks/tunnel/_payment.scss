@@ -6,6 +6,37 @@
 
 .cbo-tunnel .tunnel-content .content-payment{
 
+	.payment-box{
+		width:100%;
+		max-width:550px;
+		margin:30px auto;
+		background:$colorgoldlight;
+		padding:20px;
+
+		.box-title{
+			margin:0 0 30px 0;
+			text-align:center;
+		}
+	
+		.box-form{
+
+			input[type=text],
+			input[type=number],
+			input[type=email],
+			input[type=tel],
+			input[type=date],
+			input[type=url],
+			input[type=password]{
+				background:$colorwhite;
+				border:none;
+				padding:0 20px;
+				width:100%;
+				height:43px;
+				font-family:$fontbase;
+				font-size:14px;
+			}
+		}
+	}
 }
 
 
@@ -29,6 +60,9 @@
 
 	.cbo-tunnel .tunnel-content .content-payment{
 
+		.payment-box{
+			padding:50px;
+		}
 	}
 }
 
