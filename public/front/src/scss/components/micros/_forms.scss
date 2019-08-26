@@ -45,6 +45,7 @@ select{
 textarea{
 	outline:none;
 	resize:none;
+	height:80px;
 
 	&::placeholder{
 
@@ -182,6 +183,18 @@ input[type="number"] {
 
 	.form-field{
 		margin:3px 0;
+
+		input[type=text],
+		input[type=number],
+		input[type=email],
+		input[type=tel],
+		input[type=date],
+		input[type=url],
+		input[type=password],
+		select,
+		textarea{
+			width:100%;
+		}
 	}
 
 	.form-row{

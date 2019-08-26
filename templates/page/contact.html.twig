@@ -1,0 +1,60 @@
+{% extends '/base.html.twig' %}
+
+{% block body %}
+
+<section class="cbo-contact">
+	<div class="contact-inner cbo-container">
+	
+		<div class="contact-title cbo-stackedtitle">
+			<h1 class="cbo-bigtitle">Contact</h1>
+			<h2 class="cbo-title-1">Pour nous contacter<br />rien de plus simple !</h2>
+		</div>
+
+		<div class="contact-box">
+			<div class="box-col">
+				<h3 class="col-title cbo-title-2">
+					<span class="hilight">Avec les coordonnées<br />c'est plus facile !</span>
+				</h3>
+				<p>
+					51 rue la rue<br />
+					69000 Lyon
+				</p>
+				<p>
+					06 06 06 06 06<br />
+					04 04 04 04 04
+				</p>
+				<p>
+					contact@mon-savonnier.fr
+				</p>
+			</div>
+			<div class="box-col">
+				<h3 class="col-title cbo-title-2">
+					Remplissez le formulaire de contact ci-dessous
+				</h3>
+				<form class="col-form cbo-form" action="/nous-contacter">
+					<div class="form-field">
+						<input type="text" placeholder="Votre nom*" required />
+					</div>
+					<div class="form-field">
+						<input type="text" placeholder="Votre prénom*" required />
+					</div>
+					<div class="form-field">
+						<input type="email" placeholder="Votre email*" required />
+					</div>
+					<div class="form-field">
+						<textarea placeholder="Laissez-nous un petit mot !"></textarea>
+					</div>
+					<div class="form-submit">
+						<button type="submit" class="cbo-button button--plain">
+							Envoyer
+							<i class="icon icon--arrow"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+{% endblock %}

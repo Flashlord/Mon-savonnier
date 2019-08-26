@@ -1,0 +1,107 @@
+/* -------------------------------
+   CONTACT BLOCK
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-contact{
+
+	.contact-box{
+		background:$colorgoldlight;
+		padding:20px;
+		margin:0 auto 100px auto;
+
+		.box-col{
+
+			&:first-child{
+				padding-bottom:20px;
+				margin-bottom:30px;
+				border-bottom:1px solid $colorblack;
+			}
+
+			.col-title{
+				margin-top:0;
+				font-size:22px;
+			}
+
+			p{
+				font-size: 16px;
+				font-weight: bold;
+				line-height: 1.5em;
+			}
+
+			.col-form{
+				width:100%;
+
+				.form-field{
+					margin-bottom:15px;
+				}
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-contact{
+
+		.contact-box{
+			display:flex;
+			align-items:stretch;
+			flex-direction:row-reverse;
+			padding:50px 0;
+			max-width:950px;
+
+			.box-col{
+				width:50%;
+				padding:0 50px;
+
+				&:first-child{
+					border:none;
+					border-left:1px solid $colorblack;
+				}
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-contact{
+
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-contact{
+
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-contact{
+
+	}
+}
