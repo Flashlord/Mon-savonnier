@@ -1,0 +1,63 @@
+{% extends '/base.html.twig' %}
+
+{% block body %}
+
+<section class="cbo-login">
+	<div class="login-inner cbo-container">
+
+		<div class="login-title cbo-stackedtitle">
+			<h1 class="cbo-bigtitle">Votre compte</h1>
+			<h2 class="cbo-title-1">Création<br />de votre compte</h2>
+			<div class="cbo-title-3">Connectez-vous ou inscrivez-vous</div>
+			<a href="/" class="cbo-button">
+				Continuer vos achats
+				<i class="icon icon--arrow"></i>
+			</a>
+		</div>
+
+		<div class="login-boxes">
+
+			<div class="boxes-el">
+				<div class="el-inner">
+					<h2>
+						Déja un compte ?
+						<span class="hilight">Connectez-vous</span>
+					</h2>
+					<form action="/" method="post">
+						<input type="text" placeholder="Votre identifiant" required />
+						<input type="password" placeholder="Votre mot de passe" required />
+						<a href="#">Mot de passe oublié ?</a>
+					</form>
+					<a href="#" class="cbo-button button--plain">
+						Je me connecte
+						<i class="icon icon--arrow"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="boxes-illustration">
+				<img src="{{ asset('/front/dist/images/login/illustration.svg') }}" alt="" />
+			</div>
+
+			<div class="boxes-el">
+				<div class="el-inner">
+					<h2>
+						Pas encore de compte ?
+						<span class="hilight">Enregistrez-vous !</span>
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc neque, scelerisque vitae leo at, suscipit porta tortor. Morbi porttitor egestas elementum. Duis sed eros vitae orci facilisis.
+					</p>
+					<a href="#" class="cbo-button button--plain">
+						Je crée mon compte
+						<i class="icon icon--arrow"></i>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+{% endblock %}

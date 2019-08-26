@@ -14,9 +14,18 @@ input[type=url],
 input[type=password],
 select,
 textarea{
+	background:none;
+	border:none;
+	border-bottom:1px solid #868583;
+	color: $colorblack;
+	font-family: $fontsecond;
+	font-size: 17px;
+	font-weight: 500;
+	height:32px;
+	padding:0;
 
 	&::placeholder{
-
+		color: #868583;
 	}
 
 	&.error{

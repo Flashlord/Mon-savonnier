@@ -1,0 +1,137 @@
+/* -------------------------------
+   LOGIN BLOCK
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-login{
+
+	.login-boxes{
+
+		.boxes-illustration{
+			display:none;
+		}
+
+		.boxes-el{
+			margin:0 0 30px 0;
+
+			.el-inner{
+				background:$colorgoldlight;
+				padding:20px;
+				min-height:100%;
+			}
+
+			form{
+				margin:0 0 20px 0;
+
+				input{
+					width:100%;
+					margin:0 0 10px 0;
+				}
+			
+				a{
+					display:inline-block;
+					color:$colorgreen;
+					font-style:italic;
+					font-family:$fontsecond;
+				}
+			}
+
+			p{
+				font-family: $fontsecond;
+				font-size: 15px;
+				font-weight: 500;
+				line-height: 1.6em;
+			}
+		}
+	}
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-login{
+		margin:0 0 70px 0;
+
+		.login-boxes{
+			display:flex;
+			flex-wrap:wrap;
+			align-items:stretch;
+
+			.boxes-el{
+				width:50%;
+				padding:18px;
+				margin:0;
+
+				.el-inner{
+					padding-bottom:80px;
+					position:relative;
+				
+					.cbo-button{
+						position:absolute;
+						left:20px;
+						bottom:20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-login{
+
+		.login-boxes{
+
+			.boxes-illustration{
+				display:block;
+				width:20%;
+				display:flex;
+				align-items:flex-end;
+				padding:20px 0;
+
+				img{
+					width:100%;
+					height:auto;
+				}
+			}
+
+			.boxes-el{
+				width:40%;
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-login{
+
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-login{
+
+	}
+}

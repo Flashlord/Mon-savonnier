@@ -15,6 +15,20 @@ h2, .cbo-title-2{
    line-height:1.1333em;
 }
 
+h2, .cbo-title-2{
+
+   .hilight{
+      display:block;
+      color:$colorgreen;
+   }
+}
+
+.cbo-title-3{
+   color: $colorgreen;
+   font-size: 28px;
+   font-weight: 700;
+}
+
 .cbo-cms{
 
    p, ul{
@@ -52,6 +66,23 @@ h2, .cbo-title-2{
    text-align:center;
 }
 
+.cbo-stackedtitle{
+   text-align:center;
+
+   .cbo-bigtitle{
+      margin-top:0;
+      margin-bottom:0;
+   }
+
+   .cbo-title-1{
+      margin-top:-20px;
+   }
+
+   .cbo-button{
+      margin:30px 0;
+   }
+}
+
 /* -------------------------------
    SMALL SCREENS
 ------------------------------- */
@@ -70,8 +101,23 @@ h2, .cbo-title-2{
 	h1, .cbo-title-1{ font-size:40px; }
    h2, .cbo-title-2{ font-size:28px; }
 
+   .cbo-title-3{
+      font-size: 28px;
+   }
+
    .cbo-bigtitle{
       font-size:152px;
+   }
+
+   .cbo-stackedtitle{
+
+      .cbo-title-1{
+         margin-top:-70px;
+      }
+
+      .cbo-button{
+         margin:50px 0;
+      }
    }
 }
 

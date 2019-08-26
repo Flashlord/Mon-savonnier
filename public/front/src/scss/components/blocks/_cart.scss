@@ -7,19 +7,6 @@
 .cbo-cart{
 	margin-bottom:80px;
 
-	.cart-title{
-		text-align:center;
-
-		.cbo-bigtitle{
-			margin-top:0;
-			margin-bottom:0;
-		}
-
-		.cbo-title-1{
-			margin-top:-20px;
-		}
-	}
-
 	.cart-empty{
 		text-align:center;
 		margin-top:30px;
@@ -31,12 +18,6 @@
 
 	.cart-summary{
 		text-align:center;
-
-		.summary-price{
-			color: $colorgreen;
-			font-size: 28px;
-			font-weight: 700;
-		}
 
 		.summary-taxes{
 			color: $colorblack;
@@ -64,6 +45,7 @@
 			.el-inner{
 				background:$colorgoldlight;
 				padding:20px;
+				min-height:100%;
 			}
 
 			.el-picture{
@@ -133,13 +115,6 @@
 
 	.cbo-cart{
 
-		.cart-summary{
-
-			.summary-price{
-				font-size: 28px;
-			}
-		}
-
 		.cart-products{
 
 			.products-el{
@@ -171,13 +146,6 @@
 @media (min-width: $screen-md-min) {
 
 	.cbo-cart{
-
-		.cart-title{
-
-			.cbo-title-1{
-				margin-top:-70px;
-			}
-		}
 
 		.cart-empty{
 			margin:50px 0 100px 0;
