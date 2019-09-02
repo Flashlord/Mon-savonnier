@@ -1,0 +1,159 @@
+/* -------------------------------
+   CONFIRMATION BLOCK
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-confirmation{
+
+	.confirmation-bg{
+		display:block;
+		position:absolute;
+		top:-240px; bottom:0;
+		left:0; right:0;
+
+		.bg-top-left,
+		.bg-top-right,
+		.bg-bottom-left,
+		.bg-bottom-right{
+			display:block;
+			position:absolute;
+		
+			span{
+				display:block;
+				width:100%;
+			}
+		}
+
+		.bg-top-left{
+			width:58.93%;
+			top:0; left:0;
+
+			span{
+				padding-bottom:80.61%;
+				background:url(../images/confirmation/leaves-top-left.png) no-repeat;
+				background-size:100% auto;
+			}
+		}
+
+		.bg-bottom-right{
+			width:57%;
+			bottom:0; right:0;
+
+			span{
+				padding-bottom:77.32%;
+				background:url(../images/confirmation/leaves-bottom-right.png) no-repeat;
+				background-size:100% auto;
+			}
+		}
+	}
+
+	.confirmation-inner{
+		text-align:center;
+		padding:0 10% 15% 10%;
+	}
+
+	.confirmation-icon{
+		font-size:200px;
+		color:#b5b4af;
+	}
+
+	.confirmation-title{
+		font-family: $fontbase;
+		font-size: 50px;
+		font-weight: 900;
+
+		span{
+			display:inline-block;
+			position:relative;
+
+			&:before{
+				content:'';
+				display:block;
+				width:87px;
+				height:108px;
+				background:url(../images/confirmation/title-bg.png) no-repeat;
+				background-size:100% auto;
+				background-position:center;
+				position:absolute;
+				top:-55%; right:2%;
+				transform:scale(.5);
+				transform-origin:top right;
+			}
+		}
+	}
+
+	p{
+		font-family: $fontsecond;
+		font-size: 20px;
+		font-weight: 400;
+		line-height:1.35em;
+	}
+}
+
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+
+	.cbo-confirmation{
+
+	}
+}
+
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+
+	.cbo-confirmation{
+
+		.confirmation-bg{
+			top:-200px;
+		}
+
+		.confirmation-icon{
+			font-size:330px;
+		}
+
+		.confirmation-title{
+			font-size: 121px;
+
+			span{
+
+				&:before{
+					transform:scale(1);
+					top:-35%; right:5%;
+				}
+			}
+		}
+	}
+}
+
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+
+	.cbo-confirmation{
+
+	}
+}
+
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+
+	.cbo-confirmation{
+
+	}
+}

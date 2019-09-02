@@ -41,3 +41,7 @@ error500:
 error404:
   path: /error/404
   controller: App\Controller\FrontController::error404page
+
+confirmation:
+  path: /confirmation
+  controller: App\Controller\FrontController::confirmationPage

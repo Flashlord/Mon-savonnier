@@ -61,4 +61,9 @@ class FrontController extends AbstractController
     {
         return $this->render("page/about-us.html.twig");
     }
+
+    public function confirmationPage()
+    {
+        return $this->render("page/confirmation.html.twig");
+    }
 }
