@@ -235,6 +235,7 @@
 				.col-title{
 					display:inline-block;
 					margin-bottom:20px;
+					cursor:inherit;
 
 					.icon{
 						display:none;
@@ -244,6 +245,15 @@
 				.col-list{
 					display:block;
 					font-size:14px;
+
+					li{
+
+						a{
+							&:hover{
+								text-decoration:underline;
+							}
+						}
+					}
 				}
 
 				&:last-child{
